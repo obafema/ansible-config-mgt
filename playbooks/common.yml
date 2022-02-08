@@ -42,4 +42,4 @@
 
     - name: se timezone
       timezone:
-        name: GMT/London
+        name: United Kingdom/London
