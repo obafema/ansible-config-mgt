@@ -59,3 +59,9 @@ apache_restart_state: restarted
 # Apache package state; use `present` to make sure it's installed, or `latest`
 # if you want to upgrade or switch versions using a new repo.
 apache_packages_state: present
+
+# Enable APACHE LB.
+# Default is true.
+var:
+ -  enable_apache_lb: true
+ -  load_balancer_is_required: true
