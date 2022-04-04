@@ -115,9 +115,9 @@ mysql_databases:
 # Users.
 mysql_users:
    - name: admin
-#     host: 127.0.0.1
+     host: 0.0.0.0
      password: admin
-     priv: *.*:USAGE
+     priv: '*.*:ALL,GRANT'
 
 # Replication settings (replication is only enabled if master/user have values).
 mysql_server_id: "1"
