@@ -9,7 +9,8 @@
   with_items: "{{ apache_ports_configuration_items }}"
   notify: restart apache
 
-- name: Enable Apache mods.
+- name: Enable Apache mods. 
+  become: yes
   file:
     src: "{{ apache_server_root }}/mods-available/{{ item }}"
     dest: "{{ apache_server_root }}/mods-enabled/{{ item }}"
@@ -31,6 +32,7 @@
   with_items: "{{ apache_vhosts_ssl }}"
 
 - name: Add apache vhosts configuration.
+  become: yes
   template:
     src: "{{ apache_vhosts_template }}"
     dest: "{{ apache_conf_path }}/sites-available/{{ apache_vhosts_filename }}"
@@ -41,6 +43,7 @@
   when: apache_create_vhosts | bool
 
 - name: Add vhost symlink in sites-enabled.
+  become: yes
   file:
     src: "{{ apache_conf_path }}/sites-available/{{ apache_vhosts_filename }}"
     dest: "{{ apache_conf_path }}/sites-enabled/{{ apache_vhosts_filename }}"
