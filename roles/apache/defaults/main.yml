@@ -64,7 +64,7 @@ apache_packages_state: present
 # webserbers
 loadbalancer_name: "mycluster"
 Web1: "172.31.14.40 weight=5"
-Web2: "172.31.0.10 weight=35"
+Web2: "172.31.0.10 weight=5"
 
 # Enable APACHE LB.
 # Default is true.
