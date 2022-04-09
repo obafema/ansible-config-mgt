@@ -42,6 +42,7 @@
 
 # Nginx setup.
 - name: Copy nginx configuration in place.
+  become: yes
   template:
     src: "{{ nginx_conf_template }}"
     dest: "{{ nginx_conf_file_path }}"
@@ -52,6 +53,7 @@
     - reload nginx
 
 - name: Ensure nginx service is running as configured.
+  become: yes
   service:
     name: nginx
     state: "{{ nginx_service_state }}"

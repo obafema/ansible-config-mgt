@@ -1,2 +1,2 @@
-enable_apache: true
+enable_nginx: true
 load_balancer_is_required: true

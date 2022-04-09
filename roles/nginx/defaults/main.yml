@@ -79,14 +79,12 @@ nginx_vhosts: []
 #   state: "absent" # To remove the vhost configuration.
 
 nginx_upstreams:
-- name: web
-  become: true
+- name: myproject
   strategy: "ip_hash" # "least_conn", etc.
   keepalive: 16 # optional
   servers:  {
      "Web1 weight=5",
      "Web2 weight=5",
-     "proxy_pass http://web"
    }
 
 
