@@ -80,13 +80,11 @@ nginx_vhosts: []
 
 nginx_upstreams:
 - name: myproject
-  become: true
   strategy: "ip_hash" # "least_conn", etc.
   keepalive: 16 # optional
   servers:  {
      "Web1 weight=5",
      "Web2 weight=5",
-     "proxy_pass http://myproject"
    }
 
 
@@ -97,5 +95,5 @@ nginx_log_format: |-
 
 # Enable NGINX LB.
 # Default is true.
-enable_nginx_lb: false
-load_balancer_is_required: false
+enable_nginx_lb: true
+load_balancer_is_required: true
