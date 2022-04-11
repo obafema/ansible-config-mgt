@@ -114,9 +114,9 @@ mysql_databases:
 
 # Users.
 mysql_users:
-   - name: admin
+   - name: webaccess
      host: 0.0.0.0
-     password: admin
+     password: zicozigali
      priv: '*.*:ALL,GRANT'
 
 # Replication settings (replication is only enabled if master/user have values).
