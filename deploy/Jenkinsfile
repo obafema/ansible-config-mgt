@@ -4,7 +4,7 @@
   stages {
     stage('Initial Cleanup') {
       steps {
-        dir("$(WORKSPACE)") {
+        dir("${WORKSPACE}") {
           deleteDir()
         }
       }
