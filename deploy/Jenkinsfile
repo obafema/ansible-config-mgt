@@ -2,6 +2,14 @@
     agent any
 
   stages {
+    stage('Initial Cleanup') {
+      steps {
+        dir("$(WORKSPACE)") {
+          deleteDir()
+        }
+      }
+    }
+
     stage('Build') {
       steps {
         script {
@@ -9,7 +17,7 @@
         }
       }
     }
-
+    
     stage('Test') {
       steps {
         script {
@@ -17,5 +25,26 @@
         }
       }
     }
+
+    stage('Package') {
+      steps {
+        script {
+          sh 'echo "Packaging App"'
+        }
+      }
+    }
+
+    stage('Deploy') {
+      steps {
+        script {
+          sh 'echo "Dev"'
+        }
+      }
+    }
+
+    stage('CleanUp') {
+      steps {
+        cleanWs ()
+      }
     }
 }
