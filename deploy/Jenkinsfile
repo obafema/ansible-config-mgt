@@ -1,5 +1,5 @@
 pipeline{
-  agent: any
+  agent any
 
   environment {
       ANSIBLE_CONFIG="${WORKSPACE}/deploy/ansible.cfg"
