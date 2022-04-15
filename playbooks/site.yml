@@ -7,6 +7,6 @@
 # - name: Loadbalancers assignment
 #   import_playbook: ../static-assignments/loadbalancers.yml
 
--   hosts: artifactory
-- name: Artifactory assignment
-  import_playbook: ../static-assignments/artifactory.yml
+  - hosts: artifactory
+  - name: Artifactory assignment
+    ansible.builtin.import_playbook: ../static-assignments/artifactory.yml
