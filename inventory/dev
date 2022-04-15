@@ -3,3 +3,6 @@
 
 [db]
 172.31.27.252 ansible_ssh_user='ubuntu' 
+
+[artifatory]
+172.31.2.64 ansible_ssh_user='ec2-user'
