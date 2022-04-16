@@ -1,5 +1,5 @@
 [artifatory]
-172.31.2.64 ansible_ssh_user='ec2-user'
+172.31.5.167 ansible_ssh_user='ubuntu'
 
 [db]
 172.31.27.252 ansible_ssh_user='ubuntu'
