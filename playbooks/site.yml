@@ -1,12 +1,16 @@
----
--  hosts: db
-- name: database assignment
-  import_playbook: ../static-assignments/db.yml 
+# ---
+# -  hosts: db
+# - name: database assignment
+#   ansible.builtin.import_playbook: ../static-assignments/db.yml 
 
 # -   hosts: lb
 # - name: Loadbalancers assignment
-#   import_playbook: ../static-assignments/loadbalancers.yml
+#   ansible.builtin.import_playbook: ../static-assignments/loadbalancers.yml
 
   # - hosts: artifactory
   # - name: Artifactory assignment
   #   ansible.builtin.import_playbook: ../static-assignments/artifactory.yml
+
+-  hosts: ToDo
+- name: Deployimg the ToDo Application
+  ansible.builtin.import_playbook: ../static-assignments/deployment.yml 
