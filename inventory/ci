@@ -5,3 +5,4 @@
 172.31.27.252 ansible_ssh_user='ubuntu'
 
 [sonarqube]
+172.31.11.90 ansible_ssh_user='ubuntu'

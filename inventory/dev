@@ -1,4 +1,4 @@
-[lb]
+[nginx]
 172.31.31.122 ansible_ssh_user='ec2-user'
 
 [db]
