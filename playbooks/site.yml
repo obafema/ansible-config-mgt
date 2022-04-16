@@ -3,9 +3,9 @@
 # - name: database assignment
 #   ansible.builtin.import_playbook: ../static-assignments/db.yml 
 
-# -   hosts: lb
-# - name: Loadbalancers assignment
-#   ansible.builtin.import_playbook: ../static-assignments/loadbalancers.yml
+# -   hosts: nginx
+# - name: nginx assignment
+#   ansible.builtin.import_playbook: ../static-assignments/nginx.yml
 
   # - hosts: artifactory
   # - name: Artifactory assignment
