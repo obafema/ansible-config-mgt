@@ -42,8 +42,8 @@ sonar_db_embedded: true
 sonar_db_embedded_port: 9092
 
 # SonarQube JDBC Credentials
-sonar_db_user: ""
-sonar_db_pass: ""
+sonar_db_user: "sonar"
+sonar_db_pass: "sonar"
 
 # SonarQube JDBC URL
 # examples (from default sonar.properties file):
@@ -75,7 +75,7 @@ sonar_db_pass: ""
 # Set the sonar.jdbc.username and sonar.jdbc.password appropriately.
 #sonar_jdbc_url=jdbc:sqlserver://localhost;databaseName=sonar
 
-sonar_jdbc_url: ""
+sonar_jdbc_url: "jdbc:postgresql://localhost:5432/sonarqube"
 
 # SonarQube JDBC maximum number of active connection
 sonar_jdbc_maxactive: 60
