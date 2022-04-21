@@ -1,3 +1,6 @@
+[jenkins]
+172.31.6.56 ansible_ssh_user='ec2-user'
+
 [artifatory]
 172.31.5.167 ansible_ssh_user='ubuntu'
 
