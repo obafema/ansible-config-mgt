@@ -59,7 +59,7 @@ artifactory_upgrade_only: false
 
 #default username and password
 artifactory_admin_username: admin
-artifactory_admin_password: password
+artifactory_admin_password: Zicozigali_07
 
 artifactory_service_file: /lib/systemd/system/artifactory.service
 
