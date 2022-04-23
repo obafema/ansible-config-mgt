@@ -6,6 +6,3 @@
 
 [ToDo]
 172.31.20.30 ansible_ssh_user='ec2-user'
-
-[sonarqube]
-172.31.11.90 ansible_ssh_user='ubuntu'
