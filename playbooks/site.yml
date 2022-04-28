@@ -17,7 +17,7 @@
 
 -  hosts: tooling
 - name: Deployimg the ToDo Application
-  ansible.builtin.import_playbook: ../static-assignments/webserver.yml 
+  ansible.builtin.import_playbook: ../static-assignments/webservers.yml 
 
   # -  hosts: sonarqube
   # - name: Deployimg the ToDo Application
