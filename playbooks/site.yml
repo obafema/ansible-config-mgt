@@ -3,22 +3,22 @@
 # - name: database assignment
 #   ansible.builtin.import_playbook: ../static-assignments/db.yml 
 
--   hosts: nginx
-- name: nginx assignment
-  ansible.builtin.import_playbook: ../static-assignments/nginx.yml
+# -   hosts: nginx
+# - name: nginx assignment
+#   ansible.builtin.import_playbook: ../static-assignments/nginx.yml
 
   # - hosts: artifactory
   # - name: Artifactory assignment
   #   ansible.builtin.import_playbook: ../static-assignments/artifactory.yml
 
--  hosts: ToDo
-- name: Deployimg the ToDo Application
-  ansible.builtin.import_playbook: ../static-assignments/deployment.yml 
+# -  hosts: ToDo
+# - name: Deployimg the ToDo Application
+#   ansible.builtin.import_playbook: ../static-assignments/deployment.yml 
 
--  hosts: tooling
-- name: Deployimg the ToDo Application
-  ansible.builtin.import_playbook: ../static-assignments/webservers.yml 
+# -  hosts: tooling
+# - name: Deployimg the ToDo Application
+#   ansible.builtin.import_playbook: ../static-assignments/webservers.yml 
 
-  # -  hosts: sonarqube
-  # - name: Deployimg the ToDo Application
-  #   ansible.builtin.import_playbook: ../static-assignments/sonarqube.yml 
+  -  hosts: sonarqube
+  - name: Deployimg the ToDo Application
+    ansible.builtin.import_playbook: ../static-assignments/sonarqube.yml 
